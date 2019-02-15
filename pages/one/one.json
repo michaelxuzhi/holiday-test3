@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "datepicker": "miniprogram-datepicker",
+    "van-rate": "../../dist/rate/index"
+  }
+}

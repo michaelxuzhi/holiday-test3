@@ -1,0 +1,53 @@
+<!-- <view class='container'>
+  <view>
+   <view class='mytitle'>
+    <view class='top-tit'>{{detail.title}}{{detail.id}}</view>
+   </view>
+<view class='mydesc'>
+  <text>{{detail.content}}</text>
+</view>
+</view> -->
+
+<!-- <loading hidden="{{hidden}}">
+加载中...
+</loading>  -->
+
+<!-- </view> -->
+
+<view wx:for="{{array}}" wx:key="array" wx:for-index="idx" wx:for-item="itemname">{{idx}}:{{itemname.message}}</view>
+
+<datepicker value="{{solar}}" bindchange="bindSolarChange">
+<button type='default'>公历</button>
+</datepicker>
+<datepicker value="{{lunar}}"  chinese="{{true}}" bindchange="bindSolarChange">
+<button type='default'>阴历</button>
+</datepicker>
+
+<!-- value:当前分值，icon:实心图片名，void-icon：空心图片名，size：大小，count：图标总数，color：选中颜色，void-color：未选中时颜色，bind：change：事件 -->
+<van-rate
+  value="{{ value }}" 
+  icon="like"
+  void-icon="like-o"
+  size="{{ 25 }}"
+  count="{{ 6 }}"
+  color="#07c160"
+  void-color="#ceefe8"
+  bind:change="onChange"
+/>
+
+
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='icon-title text-blue'></text>图片背景
+  </view>
+</view>
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg')">
+  <view class='padding-xl text-white'>
+    <view class='padding-xs text-xl'>
+      我和春天有个约会
+    </view>
+    <view class='padding-xs'>
+      I Have a Date with Spring
+    </view>
+  </view>
+</view>

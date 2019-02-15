@@ -1,0 +1,14 @@
+
+
+
+<view class='map1'>
+  <map class='map2' longitude='{{longitude}}' latitude='{{latitude}}' scale='16' show-location></map>
+</view>
+
+
+
+
+<view class='btn'>
+  <view class='btn1 btn2'>发布</view>
+  <view class='btn1'>搜索</view>
+</view>
